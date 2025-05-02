@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AI Open World WebGame</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- UI -->
+  <div id="ui">
+    <div id="profession">Профессия: Гражданин</div>
+    <div id="mission">Задание: нет</div>
+    <div id="inventory">
+      <h4>Инвентарь</h4>
+      <ul id="inv-list"></ul>
+    </div>
+    <div id="shop">
+      <h4>Магазин</h4>
+      <div id="shop-items"></div>
+      <button id="close-shop">Закрыть</button>
+    </div>
+    <div id="dialog" class="hidden">Подойди к NPC и нажми E</div>
+    <div id="teleport">
+      <button onclick="teleport(0,0)">Центр</button>
+      <button onclick="teleport(20,20)">Точка миссии</button>
+    </div>
+  </div>
+
+  <!-- Three.js и зависимости -->
+  <script src="https://cdn.jsdelivr.net/npm/three@0.158.0/build/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.158.0/examples/js/controls/PointerLockControls.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.158.0/examples/js/loaders/GLTFLoader.js"></script>
+
+  <!-- Основная логика -->
+  <script src="main.js"></script>
+</body>
+</html>
